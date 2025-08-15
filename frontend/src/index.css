@@ -1,0 +1,22 @@
+#root {
+  min-height: 100%;
+  width: 100%;
+  color: white
+}
+
+@import "tailwindcss";
+
+@theme {
+  --color-highlight: #8B5CF6;
+  --color-dark-text: #8796AA;
+}
+
+@layer utilities {
+  .hide-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+}
