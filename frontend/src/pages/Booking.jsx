@@ -115,17 +115,7 @@ const Booking = () => {
             onChange={(e) => setPhone(e.target.value)}
           />
         </div>
-        <div className='flex flex-col gap-2'>
-          <label htmlFor="email" className='text-[0.9rem] text-dark-text'>Email (optional)</label>
-          <input className='block w-full rounded-md bg-slate-300 px-3 py-1 text-black focus:outline-2 focus:-outline-offset-2 focus:outline-slate-600' 
-            id='email'
-            type="text" 
-            name='email' 
-            required 
-            // value={numOfTickets}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
+        
       </div>
 
       {/* generate tickets */}
