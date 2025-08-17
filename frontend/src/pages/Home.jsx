@@ -257,8 +257,9 @@ const Home = () => {
         </div>
       }
       <section id='ticketDisplay' ref={ticketDisplayRef} className='grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-2 w-[calc(100%-30px)] mb-10 m-auto'>
-        {ticketsDetails.length <= 0 ? Array(4).fill("").map((_,index) => (
+        {ticketsDetails.length <= 0 ? Array(0).fill("").map((_,index) => (
           <Ticket key={index} tno="Sample Ticket" data={[6, 0, 0, 33, 0, 0, 68, 71, 84, 0, 16, 0, 31, 46, 57, 0, 0, 83, 0, 0, 26, 0, 49, 52, 61, 0, 86]} called={[]}/>
+
         ))
         :
           ticketsDetails.tickets.map((ticket, index) => (
